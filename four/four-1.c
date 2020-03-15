@@ -1,4 +1,13 @@
 #include <stdio.h>
+// extern "C"
+// {
+//     int add(int a, int b)
+//     {
+//         return a + b
+//     }
+// }
+extern int g;
+extern int get_min(int a, int b);
 
 void* my_memset (void* p, char v, int size)
 {
@@ -25,6 +34,8 @@ int main()
     {
         printf("%d\n", a[i]);
     }
+    printf("%d\n", g);
+    printf("%d\n", get_min(1, 2));
 
     return 0;
 }
