@@ -6,7 +6,7 @@ typedef struct LNode {
     struct LNode *next;
 }SqList, *LinkList;
 
-// 尾插法建立单链表
+// 单链表插入
 bool InsertNextNode(LinkList &L, int i, int e) {
     if(i < 1) 
         return false;
